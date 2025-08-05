@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --cor-primaria: #0C0C0C;
+    --cor-secundaria: #EEE4B1;
+    --cor-terciaria: #481E14;
+    --cor-hover: #9B3922;
+
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +20,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     box-sizing: border-box;
-    background-color: #021526;
+    background-color: var(--cor-primaria);
     color: #E2E2B6;
 }
 
@@ -25,15 +35,15 @@ body {
 }
 
 .cabecalho__menu__link {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria);
     font-weight: 600;
-    color: #22D4FD;
+    color: var(--cor-terciaria);
     font-size: 24px;
     text-decoration: none;
 }
 
 .cabecalho__menu__link:hover {
-    color: #1111FF;
+    color: var(--cor-hover);
 }
 
 .apresentacao {
@@ -54,7 +64,7 @@ body {
 
 .apresentacao__conteudo__titulo {
     font-size: 34px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fonte-primaria);
     font-weight: 400;
     font-style: normal;
 }
@@ -65,7 +75,7 @@ body {
 
 .apresentacao__conteudo__paragrafo {
     font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria);
     font-weight: 400;
     font-style: normal;
 }
@@ -79,12 +89,12 @@ body {
 }
 
 .apresentacao__botoes-redes-sociais__subtitulo{
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fonte-primaria);
     font-size: 24px;
 }
 
 .apresentacao__botoes-redes-sociais__links {
-    /* background-color: #22D4FD; */
+    /* background-color: var(cor-terciaria); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,15 +104,15 @@ body {
     text-decoration: none;
     font-size: 24px;
     padding: 16px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria);
     font-weight: 600;
-    color: #F6F6F6;
-    border: 2px solid #22D4FD;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-terciaria);
     border-radius: 8px;
 }
 
 .apresentacao__botoes-redes-sociais__links:hover {
-    background-color: #272727;
+    background-color: var(--cor-hover);
 }
 
 .imagem-pb {
@@ -116,9 +126,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #22D4FD;
-    color: #021526;
-    font-family: "Montserrat", sans-serif;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     padding: 18px;
 }
